@@ -1,0 +1,11 @@
+
+
+train: ../portugese/images/train/  # 128 images
+val: ../portugese/images/valid/  # 128 images
+
+# number of classes
+nc: 3
+
+# class names
+names: [ 'apple pie', 'baby back ribs', 'bread pudding' ]
+

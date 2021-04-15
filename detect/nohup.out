@@ -1,0 +1,40 @@
+[INFO] Namespace(agnostic_nms=False, augment=False, classes=None, conf_thres=0.3, device='', exist_ok=False, iou_thres=0.45, name='exp', nosave=False, project='runs/detect', save_conf=False, save_txt=False, update=False, view_img=False)
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:5002/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 101-049-788
+[INFO] Namespace(agnostic_nms=False, augment=False, classes=None, conf_thres=0.3, device='', exist_ok=False, iou_thres=0.45, name='exp', nosave=False, project='runs/detect', save_conf=False, save_txt=False, update=False, view_img=False)
+> /root/Food_Calorie_Estimation/detect/api.py(180)get_image()
+-> image = request.files['image'].read() # Holds byte image
+(Pdb) 127.0.0.1 - - [13/Apr/2021 11:27:09] "[31m[1mGET / HTTP/1.0[0m" 400 -
+> /root/Food_Calorie_Estimation/detect/api.py(180)get_image()
+-> image = request.files['image'].read() # Holds byte image
+(Pdb) 127.0.0.1 - - [13/Apr/2021 11:27:11] "[31m[1mGET / HTTP/1.0[0m" 400 -
+> /root/Food_Calorie_Estimation/detect/api.py(180)get_image()
+-> image = request.files['image'].read() # Holds byte image
+(Pdb) 127.0.0.1 - - [13/Apr/2021 11:27:13] "[31m[1mGET / HTTP/1.0[0m" 400 -
+  File "api.py", line 113
+    txt_path = str(save_dir / 'labels' / p.stem) + ('' if dataset.mode == 'image' else f'_{frame}')  # img.txt
+                                                                                                 ^
+SyntaxError: invalid syntax
+  File "api.py", line 113
+    txt_path = str(save_dir / 'labels' / p.stem) + ('' if dataset.mode == 'image' else f'_{frame}')  # img.txt
+                                                                                                 ^
+SyntaxError: invalid syntax
+  File "api.py", line 113
+    txt_path = str(save_dir / 'labels' / p.stem) + ('' if dataset.mode == 'image' else f'_{frame}')  # img.txt
+                                                                                                 ^
+SyntaxError: invalid syntax
+  File "api.py", line 113
+    txt_path = str(save_dir / 'labels' / p.stem) + ('' if dataset.mode == 'image' else f'_{frame}')  # img.txt
+                                                                                                 ^
+SyntaxError: invalid syntax
+  File "api.py", line 113
+    txt_path = str(save_dir / 'labels' / p.stem) + ('' if dataset.mode == 'image' else f'_{frame}')  # img.txt
+                                                                                                 ^
+SyntaxError: invalid syntax

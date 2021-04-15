@@ -1,0 +1,1 @@
+t=mohitmcis/yolov5:latest && sudo docker build -t $t . && sudo docker push $t

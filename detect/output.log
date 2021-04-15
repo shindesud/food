@@ -1,0 +1,4 @@
+  File "api.py", line 113
+    txt_path = str(save_dir / 'labels' / p.stem) + ('' if dataset.mode == 'image' else f'_{frame}')  # img.txt
+                                                                                                 ^
+SyntaxError: invalid syntax
